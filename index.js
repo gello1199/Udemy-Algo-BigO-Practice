@@ -39,3 +39,54 @@ function addUpToFirst(n) {
   }
 
   console.log(addUpToFirst(10))
+
+  function addUpToSecond(n) {
+    return n * (n + 1) / 2;
+  }
+
+  function countUpAndDown(n) {
+    console.log("Going up!");
+    for (var i = 0; i < n; i++) {
+      console.log(i);
+    }
+    console.log("At the top!\nGoing down...");
+    for (var j = n - 1; j >= 0; j--) {
+      console.log(j);
+    }
+    console.log("Back down. Bye!");
+  }
+
+  function printAllPairs(n) {
+    for (var i = 0; i < n; i++) {
+      for (var j = 0; j < n; j++) {
+        console.log(i, j);
+      }
+    }
+  }
+
+  function numberOfHalves(n) {
+    var count = 0;
+    while (n > 1) {
+      n /= 2;
+      count++;
+    }
+    return count;
+  }
+
+  function totalNumberOfHalves(n) {
+    var total = 0;
+    for (var i = 0; i < n; i++) {
+      total += numberOfHalves(n);
+    }
+    return total;
+  }
+
+  function logAllBinaries(n) {
+    var count = 0;
+    var lastNum = "1".repeat(n);
+    while (count.toString(2) !== lastNum) {
+      console.log(count.toString(2).padStart(n, "0"));
+      count++;
+    }
+    console.log(lastNum);
+  }
