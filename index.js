@@ -38,7 +38,7 @@ function addUpToFirst(n) {
     return total;
   }
 
-  console.log(addUpToFirst(10))
+//   console.log(addUpToFirst(10))
 
   function addUpToSecond(n) {
     return n * (n + 1) / 2;
@@ -56,6 +56,8 @@ function addUpToFirst(n) {
     console.log("Back down. Bye!");
   }
 
+//   console.log(countUpAndDown(10))
+
   function printAllPairs(n) {
     for (var i = 0; i < n; i++) {
       for (var j = 0; j < n; j++) {
@@ -63,6 +65,8 @@ function addUpToFirst(n) {
       }
     }
   }
+
+//   console.log(printAllPairs(5))
 
   function numberOfHalves(n) {
     var count = 0;
@@ -90,3 +94,4 @@ function addUpToFirst(n) {
     }
     console.log(lastNum);
   }
+
